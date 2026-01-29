@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>What Your Favorite Ado Song Says About You</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #9267e0, #849bdb);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        div {
+            padding: 40px;
+            max-width: 400px;
+            margin: auto;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        #result {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        select {
+            background-color: #1455CC;
+            padding: 10px;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            transform: scale(1);
+            transition: transform 0.3s ease;
+            cursor:pointer;
+        }
+        select:hover {
+            transform: scale(1.02);
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <div>
+        <h2>What your favorite Ado song says about you!</h2>
+        <br>
+        <label for="ado">Choose a song:</label>
+
+        <select id="adoSong">
+            <option value="Usseewa">Usseewa</option>
+            <option value="Backlight">Backlight</option>
+            <option value="Readymade">Readymade</option>
+            <option value="Odo">Odo</option>
+            <option value="Show">Show</option>
+            <option value="New Genesis">New Genesis</option>
+            <option value="Gira Gira">Gira Gira</option>
+            <option value="Ashura-chan">Ashura-chan</option>
+        </select>
+
+        <br>
+        <br>
+        <button py-click="Gyaru">Gyaru!</button>
+        <br>
+        <hr>
+        <br>
+        <p><span id="result"></span></p>
+    </div>
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
